@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">v2rayNG</string>
+    <string name="app_widget_name">สวิตช์</string>
+    <string name="app_tile_name">สวิตช์</string>
+    <string name="app_tile_first_use">ใช้งานครั้งแรก กรุณาเปิดแอพเพื่อเพิ่มเซิร์ฟเวอร์</string>
+    <string name="navigation_drawer_open">เปิดเมนูนำทาง</string>
+    <string name="navigation_drawer_close">ปิดเมนูนำทาง</string>
+    <string name="migration_success">ย้ายข้อมูลสำเร็จ!</string>
+    <string name="action_stop_service">หยุดบริการ</string>
+    <string name="migration_fail">ย้ายข้อมูลล้มเหลว!</string>
+    <string name="pull_down_to_refresh">ดึงลงเพื่อรีเฟรช</string>
+
+    <!-- Notifications -->
+    <string name="notification_action_stop_v2ray">หยุด</string>
+    <string name="toast_permission_denied">ไม่ได้รับสิทธิ์</string>
+    <string name="toast_permission_denied_notification">ไม่ได้รับสิทธิ์แจ้งเตือน</string>
+    <string name="notification_action_more">แตะเพื่อดูเพิ่มเติม</string>
+    <string name="toast_services_start">เริ่มบริการ</string>
+    <string name="toast_services_stop">หยุดบริการ</string>
+    <string name="toast_services_success">เริ่มบริการสำเร็จ</string>
+    <string name="toast_services_failure">เริ่มบริการล้มเหลว</string>
+
+    <!--ServerActivity-->
+    <string name="title_server">การตั้งค่า</string>
+    <string name="menu_item_add_config">เพิ่มการตั้งค่า</string>
+    <string name="menu_item_save_config">บันทึก</string>
+    <string name="menu_item_edit_config">แก้ไข</string>
+    <string name="menu_item_del_config">ลบ</string>
+    <string name="menu_item_import_config_qrcode">นำเข้าจาก QR Code</string>
+    <string name="menu_item_import_config_clipboard">นำเข้าจากคลิปบอร์ด</string>
+    <string name="menu_item_import_config_local">นำเข้าจากไฟล์ในเครื่อง</string>
+    <string name="menu_item_import_config_policy_group">เพิ่ม [Policy Group]</string>
+    <string name="menu_item_import_config_proxy_chain">เพิ่ม [Proxy Chain]</string>
+    <string name="menu_item_import_config_manually_vmess">เพิ่ม [VMess]</string>
+    <string name="menu_item_import_config_manually_vless">เพิ่ม [VLESS]</string>
+    <string name="menu_item_import_config_manually_ss">เพิ่ม [Shadowsocks]</string>
+    <string name="menu_item_import_config_manually_socks">เพิ่ม [SOCKS]</string>
+    <string name="menu_item_import_config_manually_http">เพิ่ม [HTTP]</string>
+    <string name="menu_item_import_config_manually_trojan">เพิ่ม [Trojan]</string>
+    <string name="menu_item_import_config_manually_wireguard">เพิ่ม [Wireguard]</string>
+    <string name="menu_item_import_config_manually_hysteria2">เพิ่ม [Hysteria2]</string>
+    <string name="del_config_comfirm">ยืนยันการลบ?</string>
+    <string name="del_invalid_config_comfirm">กรุณาทดสอบก่อนลบ! ยืนยันลบหรือไม่?</string>
+    <string name="server_lab_remarks">ชื่อเซิร์ฟเวอร์</string>
+    <string name="server_lab_address">ที่อยู่</string>
+    <string name="server_lab_port">พอร์ต</string>
+    <string name="server_lab_id">ID</string>
+    <string name="server_lab_alterid">Alter ID</string>
+    <string name="server_lab_security">การเข้ารหัส</string>
+    <string name="server_lab_network">เครือข่าย</string>
+    <string name="server_lab_more_function">การขนส่งข้อมูล</string>
+    <string name="server_lab_head_type">ประเภทหัว</string>
+    <string name="server_lab_mode_type">โหมด gRPC</string>
+    <string name="server_lab_request_host">โฮสต์</string>
+    <string name="server_lab_request_host_http">HTTP Host</string>
+    <string name="server_lab_request_host_ws">WS Host</string>
+    <string name="server_lab_request_host_httpupgrade">HTTPUpgrade Host</string>
+    <string name="server_lab_request_host_xhttp">XHTTP Host</string>
+    <string name="server_lab_request_host_h2">H2 Host</string>
+    <string name="server_lab_request_host_quic">QUIC Security</string>
+    <string name="server_lab_request_host_grpc">gRPC Authority</string>
+    <string name="server_lab_path">เส้นทาง</string>
+    <string name="server_lab_path_ws">WS Path</string>
+    <string name="server_lab_path_httpupgrade">HTTPUpgrade Path</string>
+    <string name="server_lab_path_xhttp">XHTTP Path</string>
+    <string name="server_lab_path_h2">H2 Path</string>
+    <string name="server_lab_path_quic">QUIC Key</string>
+    <string name="server_lab_path_kcp">KCP Seed</string>
+    <string name="server_lab_path_grpc">gRPC ServiceName</string>
+    <string name="server_lab_stream_security">TLS</string>
+    <string name="server_lab_stream_fingerprint">Fingerprint</string>
+    <string name="server_lab_stream_alpn">Alpn</string>
+    <string name="server_lab_allow_insecure">Allow Insecure</string>
+    <string name="server_lab_sni">SNI</string>
+    <string name="server_lab_address3">ที่อยู่</string>
+    <string name="server_lab_port3">พอร์ต</string>
+    <string name="server_lab_id3">รหัสผ่าน</string>
+    <string name="server_lab_security3">การเข้ารหัส</string>
+    <string name="server_lab_id4">รหัสผ่าน (ไม่บังคับ)</string>
+    <string name="server_lab_security4">ผู้ใช้ (ไม่บังคับ)</string>
+    <string name="server_lab_encryption">การเข้ารหัส</string>
+    <string name="server_lab_flow">Flow</string>
+    <string name="server_lab_public_key">Public Key</string>
+    <string name="server_lab_preshared_key">PreSharedKey (ไม่บังคับ)</string>
+    <string name="server_lab_short_id">Short ID</string>
+    <string name="server_lab_spider_x">SpiderX</string>
+    <string name="server_lab_mldsa65_verify">Mldsa65 Verify</string>
+    <string name="server_lab_secret_key">Secret Key</string>
+    <string name="server_lab_reserved">Reserved (คั่นด้วยเครื่องหมายจุลภาค)</string>
+    <string name="server_lab_local_address">ที่อยู่ท้องถิ่น (IPv4/IPv6 ไม่บังคับ)</string>
+    <string name="server_lab_local_mtu">MTU (ค่าเริ่มต้น 1420)</string>
+    <string name="server_lab_kcp_mtu">mKCP MTU (ค่าเริ่มต้น 1350)</string>
+    <string name="server_lab_kcp_tti">mKCP TTI (ค่าเริ่มต้น 50)</string>
+    <string name="toast_success">สำเร็จ</string>
+    <string name="toast_failure">ล้มเหลว</string>
+    <string name="toast_none_data">ไม่มีข้อมูล</string>
+    <string name="toast_incorrect_protocol">โปรโตคอลไม่ถูกต้อง</string>
+    <string name="toast_decoding_failed">ถอดรหัสล้มเหลว</string>
+    <string name="title_file_chooser">เลือกไฟล์การตั้งค่า</string>
+    <string name="toast_require_file_manager">กรุณาติดตั้ง File Manager</string>
+    <string name="server_customize_config">ปรับแต่งการตั้งค่า</string>
+    <string name="toast_config_file_invalid">ไฟล์การตั้งค่าไม่ถูกต้อง</string>
+    <string name="server_lab_content">เนื้อหา</string>
+    <string name="toast_none_data_clipboard">ไม่มีข้อมูลในคลิปบอร์ด</string>
+    <string name="toast_invalid_url">URL ไม่ถูกต้อง</string>
+    <string name="toast_insecure_url_protocol">ห้ามใช้ HTTP ที่ไม่ปลอดภัย</string>
+    <string name="server_lab_need_inbound">ตรวจสอบให้พอร์ต Inbound ตรงกับการตั้งค่า</string>
+    <string name="toast_malformed_josn">รูปแบบการตั้งค่าไม่ถูกต้อง</string>
+    <string name="server_lab_request_host6">Host (SNI) (ไม่บังคับ)</string>
+    <string name="toast_action_not_allowed">ไม่อนุญาตให้ทำการนี้</string>
+    <string name="server_obfs_password">Obfs Password</string>
+    <string name="server_lab_port_hop">Port Hopping</string>
+    <string name="server_lab_port_hop_interval">ช่วงเวลา Port Hopping</string>
+    <string name="server_lab_bandwidth_down">แบนด์วิดท์ดาวน์โหลด</string>
+    <string name="server_lab_bandwidth_up">แบนด์วิดท์อัพโหลด</string>
+    <string name="server_lab_xhttp_mode">โหมด XHTTP</string>
+    <string name="server_lab_xhttp_extra">XHTTP Extra JSON</string>
+    <string name="server_lab_final_mask">FinalMask JSON</string>
+    <string name="server_lab_ech_config_list">EchConfigList</string>
+    <string name="server_lab_verify_peer_cert_by_name">ตรวจสอบใบรับรองด้วยชื่อ</string>
+    <string name="server_lab_pinned_ca256">ลายนิ้วมือใบรับรอง (SHA-256)</string>
+    <string name="server_lab_browser_dialer">เปิด Browser Dialer</string>
+    <string name="toast_allow_insecure_deprecated">คำเตือน: allowInsecure จะถูกปิดใช้งานในเดือนสิงหาคม 2026</string>
+    <string name="pinned_ca256_action_fetch">ดึงลายนิ้วมือใบรับรอง</string>
+    <string name="toast_fetch_cert_sha256_success">ดึงลายนิ้วมือสำเร็จ</string>
+    <string name="toast_fetch_cert_sha256_failed">ดึงลายนิ้วมือล้มเหลว</string>
+
+    <!-- UserAssetActivity -->
+    <string name="toast_asset_copy_failed">คัดลอกไฟล์ล้มเหลว กรุณาใช้ File Manager</string>
+    <string name="menu_item_add_asset">เพิ่มแอสเซท</string>
+    <string name="menu_item_add_file">เพิ่มไฟล์</string>
+    <string name="menu_item_add_url">เพิ่ม URL</string>
+    <string name="menu_item_scan_qrcode">สแกน QR Code</string>
+    <string name="title_url">URL</string>
+    <string name="menu_item_download_file">ดาวน์โหลดไฟล์</string>
+    <string name="title_user_asset_add_url">เพิ่ม URL แอสเซท</string>
+    <string name="msg_file_not_found">ไม่พบไฟล์</string>
+    <string name="msg_remark_is_duplicate">ชื่อนี้มีอยู่แล้ว</string>
+    <string name="asset_geo_files_sources">แหล่ง Geo Files (ไม่บังคับ)</string>
+
+    <!-- PerAppProxyActivity -->
+    <string name="msg_dialog_progress">กำลังโหลด...</string>
+    <string name="menu_item_search">ค้นหา</string>
+    <string name="menu_item_select_all">เลือกทั้งหมด</string>
+    <string name="menu_item_invert_selection">กลับการเลือก</string>
+    <string name="msg_enter_keywords">พิมพ์คำค้นหา</string>
+    <string name="switch_bypass_apps_mode">โหมด Bypass</string>
+    <string name="menu_item_select_proxy_app">เลือกแอพพร็อกซี่อัตโนมัติ</string>
+    <string name="msg_downloading_content">กำลังดาวน์โหลด</string>
+    <string name="menu_item_export_proxy_app">ส่งออกไปยังคลิปบอร์ด</string>
+    <string name="menu_item_import_proxy_app">นำเข้าจากคลิปบอร์ด</string>
+    <string name="per_app_proxy_settings">การตั้งค่าต่อแอพ</string>
+    <string name="per_app_proxy_settings_enable">เปิดใช้งานต่อแอพ</string>
+    <string name="app_picker_unknown_app">แอพไม่รู้จัก</string>
+
+    <!-- Preferences -->
+    <string name="title_settings">การตั้งค่า</string>
+    <string name="title_advanced">การตั้งค่าขั้นสูง</string>
+    <string name="title_core_settings">การตั้งค่า Core</string>
+    <string name="title_vpn_settings">การตั้งค่า VPN</string>
+    <string name="title_pref_per_app_proxy">พร็อกซี่ต่อแอพ</string>
+    <string name="summary_pref_per_app_proxy">ทั่วไป: แอพที่ติ๊กใช้พร็อกซี่, ไม่ติ๊กเชื่อมต่อตรง\nโหมด Bypass: แอพที่ติ๊กเชื่อมตรง, ไม่ติ๊กใช้พร็อกซี่</string>
+    <string name="title_pref_is_booted">เชื่อมต่ออัตโนมัติเมื่อเปิดเครื่อง</string>
+    <string name="summary_pref_is_booted">เชื่อมต่อเซิร์ฟเวอร์ที่เลือกอัตโนมัติเมื่อเปิดเครื่อง</string>
+
+    <string name="title_pref_auto_remove_invalid_after_test">ลบการตั้งค่าที่ไม่ถูกต้องหลังทดสอบ</string>
+    <string name="title_pref_auto_sort_after_test">เรียงลำดับอัตโนมัติหลังทดสอบ</string>
+
+    <string name="title_mux_settings">การตั้งค่า Mux</string>
+    <string name="title_pref_mux_enabled">เปิด Mux</string>
+    <string name="summary_pref_mux_enabled">เร็วขึ้น แต่อาจไม่เสถียร</string>
+
+    <string name="title_pref_speed_enabled">แสดงความเร็ว</string>
+    <string name="title_pref_sniffing_enabled">เปิด Sniffing</string>
+    <string name="title_pref_local_dns_enabled">เปิด DNS ในเครื่อง</string>
+    <string name="title_pref_fake_dns_enabled">เปิด Fake DNS</string>
+    <string name="title_pref_ipv6_enabled">เปิด IPv6</string>
+    <string name="title_pref_remote_dns">Remote DNS</string>
+    <string name="title_pref_proxy_sharing_enabled">อนุญาตเชื่อมต่อจาก LAN</string>
+    <string name="title_language">ภาษา</string>
+    <string name="title_about">เกี่ยวกับ</string>
+    <string name="title_source_code">ซอร์สโค้ด</string>
+    <string name="title_tg_channel">ช่อง Telegram</string>
+
+</resources>
