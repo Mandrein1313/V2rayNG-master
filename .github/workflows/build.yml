@@ -41,7 +41,7 @@ jobs:
           path: V2rayNG/app/build/outputs/apk/**/debug/*arm64*.apk
 
       - name: Create Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: "v2rayNG-Debug-${{ github.run_number }}"
           name: "Build #${{ github.run_number }}"
