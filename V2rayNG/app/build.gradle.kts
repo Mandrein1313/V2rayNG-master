@@ -6,12 +6,13 @@ plugins {
 
 android {
     namespace = "com.v2ray.ang"
-    compileSdk = 37
+    // ปรับลดลงมาเป็น 35 เพื่อความเสถียรในการคอมไพล์บนระบบโมบายล์และคลาวด์บิลด์
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.v2ray.ang"
         minSdk = 24
-        targetSdk = 37
+        targetSdk = 35
         versionCode = 735
         versionName = "2.2.5"
         multiDexEnabled = true
@@ -61,11 +62,10 @@ android {
         }
     }
 
-    sourceSets {
-        getByName("main") {
-            jniLibs.srcDirs("libs")
-        }
-    }
+    /* 
+      ลบส่วน sourceSets jniLibs.srcDirs("libs") ออกชั่วคราว 
+      เพื่อให้ระบบดึงไฟล์ .so จากข้างใน libv2ray.aar มาใช้งานโดยตรง ไม่ให้เกิดการทับซ้อนกัน
+    */
 
     compileOptions {
         isCoreLibraryDesugaringEnabled = true
@@ -137,7 +137,7 @@ android {
 }
 
 dependencies {
-    // Core Libraries
+    // Core Libraries - ดึงไฟล์ .aar และ .jar จากโฟลเดอร์ libs ทั้งหมดมาประมวลผล
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar", "*.jar"))))
 
     // AndroidX Core Libraries
