@@ -6,13 +6,11 @@ plugins {
 
 android {
     namespace = "com.v2ray.ang"
-    // ขยับกลับขึ้นมาเป็น 37 เพื่อให้ผ่านเงื่อนไข CheckAarMetadata ของ libv2ray.aar ตัวใหม่
     compileSdk = 37
 
     defaultConfig {
         applicationId = "com.v2ray.ang"
         minSdk = 24
-        // ล็อกพฤติกรรมรันไทม์ไว้ที่เวอร์ชันมาตรฐานเพื่อความเสถียรในการทำงานของ VPN
         targetSdk = 35
         versionCode = 735
         versionName = "2.2.5"
@@ -126,14 +124,15 @@ android {
 
     packaging {
         jniLibs {
-            useLegacyPackaging = true
+            // แก้ไขเป็น false เพื่อบังคับให้แตกไฟล์ .so ออกมานอกชุดติดตั้ง ป้องกันอาการเรียกแกน VPN แล้วเด้งหลุด
+            useLegacyPackaging = false
         }
     }
 
 }
 
 dependencies {
-    // Core Libraries - โหลดไฟล์ .aar จากโฟลเดอร์ libs อัตโนมัติ
+    // Core Libraries
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar", "*.jar"))))
 
     // AndroidX Core Libraries
