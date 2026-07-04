@@ -6,12 +6,13 @@ plugins {
 
 android {
     namespace = "com.v2ray.ang"
-    // ปรับลดลงมาเป็น 35 เพื่อความเสถียรในการคอมไพล์บนระบบโมบายล์และคลาวด์บิลด์
-    compileSdk = 35
+    // ขยับกลับขึ้นมาเป็น 37 เพื่อให้ผ่านเงื่อนไข CheckAarMetadata ของ libv2ray.aar ตัวใหม่
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.v2ray.ang"
         minSdk = 24
+        // ล็อกพฤติกรรมรันไทม์ไว้ที่เวอร์ชันมาตรฐานเพื่อความเสถียรในการทำงานของ VPN
         targetSdk = 35
         versionCode = 735
         versionName = "2.2.5"
@@ -61,11 +62,6 @@ android {
             buildConfigField("String", "DISTRIBUTION", "\"Play Store\"")
         }
     }
-
-    /* 
-      ลบส่วน sourceSets jniLibs.srcDirs("libs") ออกชั่วคราว 
-      เพื่อให้ระบบดึงไฟล์ .so จากข้างใน libv2ray.aar มาใช้งานโดยตรง ไม่ให้เกิดการทับซ้อนกัน
-    */
 
     compileOptions {
         isCoreLibraryDesugaringEnabled = true
@@ -137,7 +133,7 @@ android {
 }
 
 dependencies {
-    // Core Libraries - ดึงไฟล์ .aar และ .jar จากโฟลเดอร์ libs ทั้งหมดมาประมวลผล
+    // Core Libraries - โหลดไฟล์ .aar จากโฟลเดอร์ libs อัตโนมัติ
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar", "*.jar"))))
 
     // AndroidX Core Libraries
